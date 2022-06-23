@@ -1,0 +1,182 @@
+$primary-color: #3fbbc0;
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    .container-fluid {
+        .row {
+            background-color: $primary-color;
+        }
+
+        nav {
+            position: sticky;
+
+            .container-fluid {
+                font-weight: 500;
+                font-size: 13px;
+
+                .app-button>a {
+                    padding: 10px 25px;
+                    background-color: $primary-color;
+                }
+
+                .col-md-6 {
+                    ul>li>a {
+                        &:hover {
+                            color: $primary-color;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    #features {
+        .container>.row>.col-md-3 {
+            .feature-item {
+                transition: 0.2s;
+
+                i {
+                    color: $primary-color;
+                }
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: white;
+
+                    i {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    #emergency {
+        .container-fluid {
+            background-color: $primary-color;
+
+            .row>.col-md-10>a {
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    #features-lab {
+        .container>.row>.col-md-6 {
+            img {
+                max-width: 100%;
+            }
+
+            .feature-lap-item {
+                .lap-icon {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    #doctors {
+        background-color: #f7fcfc;
+
+        .container>.row {
+            .doctor-context {
+                h2::before {
+                    content: "";
+                    width: 55px;
+                    background-color: $primary-color;
+                    height: 3px;
+                    bottom: -15px;
+                    left: 48%;
+                    position: absolute;
+                }
+            }
+
+            .col-md-3>.shadow>.card-body {
+                h5 {
+                    font-size: 18px;
+                    color: #555555;
+                }
+
+                p {
+                    color: #aaaaaa;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    #contact {
+        .container>.row {
+            .contact-context {
+                h2::before {
+                    content: "";
+                    width: 55px;
+                    background-color: $primary-color;
+                    height: 3px;
+                    bottom: -15px;
+                    left: 48%;
+                    position: absolute;
+                }
+            }
+
+            .col-md-6 {
+                .col-md-12 {
+                    i {
+                        color: $primary-color;
+                        border: 1px dotted $primary-color;
+                        padding: 8px 13px;
+                        border-radius: 50%;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        color: #555555;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        color: #555555;
+                    }
+                }
+
+                .col-md-6 {
+                    i {
+                        color: $primary-color;
+                        border: 1px dotted $primary-color;
+                        padding: 8px 11px;
+                        border-radius: 50%;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        color: #555555;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        color: #555555;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.btn-form {
+    background-color: $primary-color;
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
